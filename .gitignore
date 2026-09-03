@@ -1,9 +1,13 @@
-# Dependências do Composer (quando você adicionar)
+# Dependências do Composer
 /vendor/
 
 /node_modules/
 
-# Arquivos de ambiente (senhas de banco de dados)
+/sessions/
+
+/cache/
+
+# Arquivos de ambiente
 .env
 .env.local
 
