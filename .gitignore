@@ -1,0 +1,19 @@
+# Dependências do Composer (quando você adicionar)
+/vendor/
+
+/node_modules/
+
+# Arquivos de ambiente (senhas de banco de dados)
+.env
+.env.local
+
+# Arquivos de IDE (VSCode, PHPStorm)
+.idea/
+.vscode/
+*.swp
+
+# Logs e arquivos de sistema operacional
+/logs/
+*.log
+.DS_Store
+Thumbs.db

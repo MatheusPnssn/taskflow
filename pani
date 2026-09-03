@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+$comando = isset($argv[1]) ? $argv[1] : null;
+
+if ($comando === 'start') {
+    echo "Iniciando servidor de desenvolvimento em http://localhost:8000\n";
+    echo "Pressione Ctrl+C para parar.\n\n";
+
+    // O passthru executa o comando e joga a saída do servidor direto no seu terminal
+    passthru('php -S localhost:8000 -t public');
+}
+else {
+    echo "Comando não reconhecido.\n";
+    echo "Comandos disponíveis:\n";
+    echo "  start    Inicia o servidor embutido do PHP\n";
+}
